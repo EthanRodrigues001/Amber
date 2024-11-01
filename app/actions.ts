@@ -20,8 +20,12 @@ export async function deleteImage(fileId: string) {
 export async function viewFiles() {
   try {
     const response = await pinata.files.list();
-    // console.log(response.files);
-    return response.files;
+    // Ensure name is always a string
+    const files = response.files.map((file: any) => ({
+      ...file,
+      name: file.name || "Unnamed File",
+    }));
+    return files;
   } catch (error) {
     console.error("Error fetching files from Pinata:", error);
     throw error;

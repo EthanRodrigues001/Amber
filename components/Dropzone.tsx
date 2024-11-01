@@ -10,26 +10,26 @@ import { cn } from "@/lib/utils";
 import { pinata } from "@/lib/config";
 import { deleteImage } from "@/app/actions";
 
-const mainVariant = {
-  initial: {
-    x: 0,
-    y: 0,
-  },
-  animate: {
-    x: 20,
-    y: -20,
-    opacity: 0.9,
-  },
-};
+// const mainVariant = {
+//   initial: {
+//     x: 0,
+//     y: 0,
+//   },
+//   animate: {
+//     x: 20,
+//     y: -20,
+//     opacity: 0.9,
+//   },
+// };
 
-const secondaryVariant = {
-  initial: {
-    opacity: 0,
-  },
-  animate: {
-    opacity: 1,
-  },
-};
+// const secondaryVariant = {
+//   initial: {
+//     opacity: 0,
+//   },
+//   animate: {
+//     opacity: 1,
+//   },
+// };
 
 export function FileUpload() {
   const [files, setFiles] = useState<

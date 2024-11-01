@@ -3,7 +3,15 @@ import { getData } from "../actions";
 import { redirect } from "next/navigation";
 import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
 
-export default async function DynamicImage({ searchParams }) {
+interface SearchParams {
+  cid?: string;
+}
+
+export default async function DynamicImage({
+  searchParams,
+}: {
+  searchParams: SearchParams;
+}) {
   const cid = searchParams.cid as string;
   if (!cid) {
     redirect("/");

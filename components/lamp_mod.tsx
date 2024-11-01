@@ -2,13 +2,7 @@
 import React from "react";
 import { cn } from "@/lib/utils";
 
-export const Lamp = ({
-  children,
-  className,
-}: {
-  children: React.ReactNode;
-  className?: string;
-}) => {
+export const Lamp = ({ className }: { className?: string }) => {
   return (
     <div className={cn("relative w-full", className)}>
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-2/4 max-w-3xl">
@@ -30,7 +24,7 @@ export const Lamp = ({
           ></div>
         </div>
       </div>
-      <div className="relative z-10 pt-14">{children}</div>
+      <div className="relative z-10 pt-14"></div>
     </div>
   );
 };

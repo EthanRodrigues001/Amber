@@ -1,6 +1,7 @@
 import { NextResponse, NextRequest } from "next/server";
 import { pinata } from "@/lib/config";
 
+export const runtime = "edge";
 export const config = {
   api: {
     bodyParser: false,

@@ -20,9 +20,8 @@ const secondaryVariant = {
   animate: { opacity: 1 },
 };
 
-export const FileUpload = ({
-  onChange,
-}: {
+export const FileUpload = ({}: //   onChange,
+{
   onChange?: (files: File[]) => void;
 }) => {
   const [files, setFiles] = useState<

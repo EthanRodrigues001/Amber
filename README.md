@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Blingo Image Uploader
+
+Blingo Image Uploader is a sleek and efficient image uploading website where users can upload images of 5MB and below. Built with modern web technologies, it ensures a smooth and secure experience for all users.
+
+## Features
+
+- Upload images up to 5MB
+- Secure storage using Pinata cloud
+- Built with Next.js, React.js, TypeScript, Aceternity UI, Shadcn UI, and TailwindCSS
+
+## Tech Stack
+
+- **Frontend**: Next.js, React.js, TypeScript, Aceternity UI, Shadcn UI, TailwindCSS
+- **Backend**: Pinata SDK for cloud storage
 
 ## Getting Started
 
-First, run the development server:
+To get started with the project, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/blingo-image-uploader.git
+   cd blingo-image-uploader
+   ```
+2. Create a `.env` file in the root directory and add the following environment variables:
+   ```env
+   PINATA_JWT=
+   NEXT_PUBLIC_GATEWAY_URL=
+   ```
+3. Install dependencies:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+   ```bash
+   npm install
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+4. Run the server:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+   ```bash
+      npm run dev
+   ```
 
-## Learn More
+5. Open your browser and navigate to http://localhost:3000 to see the app in action.
 
-To learn more about Next.js, take a look at the following resources:
+## License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed under the MIT License.

@@ -24,7 +24,7 @@ export default async function DynamicImage({
           <div className="bg-zinc-800 p-8 rounded-lg shadow-md w-full max-w-md">
             <ImageViewer
               base64Data={base64Data}
-              contentType={contentType}
+              contentType={contentType || "image/png"}
               cid={cid}
             />
           </div>

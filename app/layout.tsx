@@ -69,7 +69,7 @@ function Footer() {
       <div className="max-w-5xl mx-auto px-4 flex justify-between items-center">
         <p>© 2024 Amber. Created by Ethan.</p>
         <a
-          href="https://github.com/yourusername/amber"
+          href="https://github.com/EthanRodrigues001"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center hover:text-zinc-100 transition-colors"

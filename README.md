@@ -24,8 +24,8 @@ To get started with the project, follow these steps:
    ```
 2. Create a `.env` file in the root directory and add the following environment variables:
    ```env
-   PINATA_JWT=
-   NEXT_PUBLIC_GATEWAY_URL=
+    PINATA_JWT=
+    NEXT_PUBLIC_GATEWAY_URL=
    ```
 3. Install dependencies:
 
@@ -36,7 +36,7 @@ To get started with the project, follow these steps:
 4. Run the server:
 
    ```bash
-      npm run dev
+    npm run dev
    ```
 
 5. Open your browser and navigate to http://localhost:3000 to see the app in action.

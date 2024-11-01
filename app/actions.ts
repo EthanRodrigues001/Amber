@@ -35,7 +35,7 @@ export async function getData(cid: string) {
 
     // Convert the Blob to a Base64 string
     let base64String = "";
-    if (gateway.data) {
+    if (gateway.data instanceof Blob) {
       const arrayBuffer = await gateway.data.arrayBuffer();
       base64String = Buffer.from(arrayBuffer).toString("base64");
     }

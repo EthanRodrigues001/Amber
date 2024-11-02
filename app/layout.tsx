@@ -6,7 +6,7 @@ import { Link as Github } from "lucide-react";
 import "./globals.css";
 import { IconDatabase, IconHome } from "@tabler/icons-react";
 import { FloatingNav } from "@/components/ui/floating-navbar";
-import Head from "next/head";
+// import Head from "next/head";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -21,10 +21,24 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Amber",
-  description: "File storage made simple.",
+  description:
+    "Amber is a premium and secure image storage platform that allows users to upload and store images up to 5MB. Built with Next.js, React.js, TypeScript, Aceternity UI, Shadcn UI, and TailwindCSS, Amber ensures a smooth and efficient user experience. Store your images with confidence using Amber's reliable cloud storage powered by Pinata.",
   icons: {
     icon: "/favicon.ico",
   },
+  openGraph: {
+    title: "Amber",
+    description:
+      "Amber is a premium and secure image storage platform that allows users to upload and store images up to 5MB. Built with Next.js, React.js, TypeScript, Aceternity UI, Shadcn UI, and TailwindCSS, Amber ensures a smooth and efficient user experience. Store your images with confidence using Amber's reliable cloud storage powered by Pinata.",
+    url: "https://amber.blingo.tech/",
+    type: "website",
+    images: [
+      { url: "/banner.png", width: 1200, height: 630, alt: "Amber Banner" },
+    ],
+  },
+  keywords:
+    "Amber, image storage, secure image storage, cloud storage, Next.js, React.js, TypeScript, Aceternity UI, Shadcn UI, TailwindCSS, Pinata, upload images, store images, free image storage",
+  authors: [{ name: "Ethan Rodrigues" }],
 };
 
 export default function RootLayout({
@@ -48,10 +62,6 @@ export default function RootLayout({
   ];
   return (
     <html lang="en">
-      {/* <Head>
-        {" "}
-        <link rel="icon" href="/favicon.ico" />{" "}
-      </Head> */}
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

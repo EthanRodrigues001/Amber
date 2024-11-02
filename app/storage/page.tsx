@@ -152,7 +152,7 @@ export default function Storage() {
               </div>
 
               <Link
-                href={`http://localhost:3000/img?cid=${file.cid}`}
+                href={`http://amber.blingo.tech/img?cid=${file.cid}`}
                 passHref
                 className="absolute right-4 top-3"
               >
